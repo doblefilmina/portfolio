@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FAVICON -->
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5fdc0dce70.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+</head>
+
+
+
+  <style>
+    #TITULO { font-family: 'Roboto Mono', monospace;
+    }
+
+    #capa-1 {
+      z-index: -100;
+      position: absolute;
+      opacity: 1;
+      display: block;
+      /*animation: transformacion-capa-1 5s infinite;*/
+    }
+    
+    #capa-2 {
+      z-index: 0;
+      opacity: 0;
+      position: absolute;
+      display: block;
+      animation: transformacion-capa-2 2.5s infinite;
+    }
+
+    #capa-3 {
+      opacity: 0;
+    }
+
+    @keyframes transformacion-capa-1 {
+    0% {  opacity: 1; }
+    50% { opacity: 1}
+    50.1% { opacity: 0;}
+    100% { opacity: 0;}
+    }
+    @keyframes transformacion-capa-2 {
+      0% {  opacity: 0; }
+    50% { opacity: 0}
+    50.1% { opacity: 1;}
+    100% { opacity: 1;}
+    }
+
+    h2 span {
+      text-decoration: line-through;
+    }
+
+    i {
+      font-size: 10rem;
+    }
+
+    .par {
+      background-color: rgba(194, 194, 194, 0.274);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .impar {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .barra {
+      height: 1.8rem;
+      font-size: 1.6rem;
+      text-align: left;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      padding: 0rem;
+    }
+
+    .barra p {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      margin-top: -0.9rem;
+      padding: 0%;
+      padding-left: 1rem;
+      text-align: left;
+      vertical-align: top;
+    }
+  </style>
+  <body>
+    
+    
+    <!--INICIO NAVBAR-->
+    <section class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mi Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#presentacion">Presentacion <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!--FIN NAVBAR-->
+
+
+ <div class="container-fluid">
+     
+  <!--INICIO PRESENTACIÓN-->
+            <section id="presentacion" class="impar">
+              <section class="row">
+                    <div id="foto-presentacion" class="col-sm-12 col-md-6 p-5">
+                      <div id="capa-1">
+                        <img id="foto-perfil" src="img/avatar_FB_sb_circ.png" alt="Federico Brusa" class="img-fluid rounded-circle">
+                      </div>
+                      <div id="capa-2">
+                        <img id="foto-perfil2" src="img/avatar_FB_b_circ.png" alt="Federico Brusa" class="img-fluid rounded-circle">
+                      </div>
+                      <div id="capa-3">
+                        <img id="foto-perfil3" src="img/avatar_FB_b_circ.png" alt="Federico Brusa" class="img-fluid rounded-circle">
+                      </div>  
+                      </div>
+                    <div class="col-sm-12 col-md-6 p-3">
+                        <h1 class="mt-3">Federico Brusa</h1>
+                        <h2 class="h3 mt-3"> <span>Ingeniero Civil </span> Desarrollador 
+                          <div class="spinner-border" role="status" id="spinner">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </h2>
+                        
+                        <p class="mt-3"> Motivado por la curiosidad y el analfabetismo digital en el rubro de la construcción decidí reorientar mi carrera hacia la creación de productos digitales. </p>
+                    </div>
+              </section>
+            </section>
+
+    <!--FIN PRESENTACIÓN-->
+
+    <!--INICIO TÍTULO-->
+      <section id="experiencia" class="par">    
+        <section id="experiencia-titulo" class="row">
+            <div class="col-sm-12">
+                <P id="TITULO" class="h1 text-center m-1">(IN)Experiencia</P>
+            </div>
+        </section>
+    
+    <!--FIN TÍTULO-->
+
+    <!--INICIO EXPERIENCIA-->
+    <section id="experiencia-contenido" class="row">
+        <ul id="lista-experiencia" class="list-unstyled p-4">
+            <li class="media">
+              <img src="img/logo__large_plus.png" class="mr-3 mt-3 img-fluid" alt="Mercado Libre">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Mercado Libre</h5>
+                <p>NO trabajé en Mercado Libre, pero si lo hubiera hecho, me hubiera gustado analizar el comportamiento de los usuarios en base a los datos de búsquedas y compras.</p>
+              </div>
+            </li>
+            <hr>
+            <li class="media">
+              <img src="img/globant.png" class="mr-3 mt-3 img-fluid" alt="Globant">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Globant</h5>
+                <p>NO trabajé en esta empresa, pero si lo hubiera hecho, me hubiera gustado trabajar en el desarrollo de algun servicio sobre plataformas, en el sector back-end. <br> También me gustaría resolver los problemas de referenciamiento que tiene la navbar de la página principal. </p>
+              </div>
+            </li>
+            <hr>
+            <li class="media">
+              <img src="img/despegar.png" class="mr-3" alt="Despegar">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Despegar</h5>
+                <p>NO trabajé en esta empresa, pero si lo hubiera hecho, eliminaría toda la publicidad de absolutamente todos los medios y distribuiría toda la plata de esos contratos entre los empleados &#128521</p>
+              </div>
+            </li>
+        </ul>
+      </section>
+    
+      </section>    
+    <!--FIN PORTFOLIO-->
+
+    <!--INICIO TÍTULO-->
+    <section id="testimonios" class="impar">
+        <div id="testimonios-titulo" class="row">
+            <div class="col-sm-12">
+                <P id="TITULO" class="h1 text-center m-5">TESTIMONIOS</P>
+            </div>
+        </div>
+    <!--FIN TÍTULO-->
+
+    <!--INICIO TESTIMONIOS-->
+        <section id="testimonios-contenido" class="row">
+            <div class="col-sm-12 col-md-3 col-lg-4">
+                <div class="card">
+                    <img src="img/avatar_galperinv02.png" class="card-img-top" alt="Marcos Galperin">
+                    <div class="card-body">
+                      <h5 class="card-title">Marcos Galperín</h5>
+                      <h6>Mercado Libre</h6>
+                      <p class="card-text">"Me hubiese encantado trabajar con Federico. Es un muchacho con muchas <a href="#titulo-habilidades">habilidades</a>."</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-4">
+              <div class="card">
+                  <img src="img/avatar_migoya.png" class="card-img-top" alt="Marley">
+                  <div class="card-body">
+                    <h5 class="card-title">Martín Migoya</h5>
+                    <h6>Globant</h6>
+                    <p class="card-text">"Me hubiese encantado trabajar con Federico. Increíble cantidad de <a href="#titulo-recursos">recursos</a> maneja."</p>
+                  </div>
+                </div>
+            </div>
+
+          <div class="col-sm-12 col-md-3 col-lg-4">
+            <div class="card">
+                <img src="img/avatar_marley.png" class="card-img-top" alt="Marley">
+                <div class="card-body">
+                  <h5 class="card-title">Marley</h5>
+                  <h6>Despegar</h6>
+                  <p class="card-text">"Me hubiese encantado trabajar con Federico. Tiene una muy buena red de <a href="#titulo-contactos">contactos</a>."</p>
+                </div>
+            </div>
+          </div>
+        </section>
+    </section> 
+    <!--FIN TESTIMONIOS-->
+
+        <!--INICIO TÍTULO-->
+      <section id="recursos" class="par">    
+        <section id="recursos-titulo" class="row">
+            <div class="col-sm-12">
+                <P id="TITULO" class="h1 text-center m-1">Recursos</P>
+            </div>
+        </section>
+    
+    <!--FIN TÍTULO-->
+
+        <!--INICIO RECURSOS-->
+            <div id="recursos-contenido" class="row">
+                <div class="col-sm-6 col-md-3 p-auto">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div class="col-sm-6 col-md-3  p-auto">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="col-sm-6 col-md-3 p-auto">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="col-sm-6 col-md-3 p-auto">
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+            </div>
+        
+    </section>
+        <!--FIN RECURSOS-->
+
+        <!--INICIO TÍTULO-->
+    <section id="habilidades" class="impar">
+      <div id="habilidades-titulo" class="row">
+          <div class="col-12">
+              <P id="TITULO" class="h1 text-center m-5">Habilidades</P>
+          </div>
+      </div>
+  <!--FIN TÍTULO-->
+
+  <!--INICIO HABILIDADES-->
+      <section id="habilidades-contenido" class="row">
+        <div class="progress barra col-12 my-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><p>Decisión</p></div>
+        </div>
+        <div class="progress barra col-12 my-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><p>Trabajo en equipo</p></div>
+        </div>
+        <div class="progress barra col-12 my-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"><p>Perseverancia</p></div>
+        </div>
+        <div class="progress barra col-12 my-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"><p>Creatividad</p></div>
+        </div>
+        <div class="progress barra col-12 my-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 96%;" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"><p>Flexibilidad</p></div>
+        </div>
+      </section>
+    </section>
+          
+  <!--FIN HABILIDADES-->
+
+  <!--INICIO TÍTULO-->
+  <section id="contacto" class="par">    
+    <section id="contacto-titulo" class="row">
+        <div class="col-sm-12">
+            <P id="TITULO" class="h1 text-center m-1">Contacto</P>
+        </div>
+    </section>
+
+<!--FIN TÍTULO-->
+
+    <!--INICIO CONTACTO-->
+        <div id="contacto-contenido" class="row">
+          <form class="col-12" action="https://webhook.site/4bb04849-9c79-4403-8f72-157e57a26141" method="post" enctype="multipart/form-data">
+              <div class="form-row">
+                <div class="form-group col-md-6 col-sm-12">
+                  <label for="Nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group col-md-6 col-sm-12">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" class="form-control" id="Apellido">
+                </div>
+              <div class="form-row">
+                </div>
+                <div class="form-group col-sm-12 col-md-8">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group col-sm-12 col-md-4">
+                  <label for="telefono">Telefono (opcional)</label>
+                  <input type="tel" class="form-control" id="telefono">
+                </div>
+              </div>
+                <div class="form-group">
+                  <label for="msj">Mensaje</label>
+                  <textarea class="form-control" id="msj" rows="3"></textarea>
+                </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar</button>         
+           </form>
+          </div>
+    </section>
+    <!--FIN CONTACTO-->
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
